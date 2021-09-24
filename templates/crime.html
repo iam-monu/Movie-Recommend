@@ -1,181 +1,6 @@
 {% extends 'base.html' %}
 {%block title %}Crime{% endblock title %}
 
-
-{% block body %}
-<div class="container">
-    <!-- 1st card -->
-    <div class="cards">
-        <div class="image">
-            <img src='/static/Crime/Goodfellas.webp'
-                alt="Goodfellas">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p>IMDb:8.7  <br> Rotten tomatoes 97% </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-
-    <!--2nd  cards -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/Mystic River.jpg"
-                alt="Mystic river">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p> IMDb:7.9  <br> Rotten Tomatoes 89%  </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-     
-    
-    <!-- 3rd card -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/Zodiac.jpg"
-                alt="Zodiac">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p> IMDb:7.7 <br> Rotten Tomatoes 77% </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-
-    <!-- 4th card -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/Talvar.jpg"
-                alt=" Talvar ">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p>IMDb:8.2  <br> Rotten Tomatoes 90% </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-      
-
-    <!-- 5th card -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/Thadam.jpg"
-                alt="Thadam">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p>IMDb:8.2  <br> Rotten Tomatoes- </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-
-    <!-- 6th card -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/Nocountryforold.jpg"
-                alt="No country for Old">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p>IMDb:8.1  <br> Rotten Tomatoes 86%  </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-
-    <!-- 7th card -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/John Wick.jpg"
-                alt="John  Wick">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p> IMDb:7.4  <br> Rotten Tomatoes 81% </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-    
-    <!-- 8th cards -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/Kill Billl.jpg"
-                alt="Kill Bill">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p> IMDb:8.1 <br> Rotten Tomatoes 81%  </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-
-    <!-- 9th card -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/Hunger Game.jpg"
-                alt="Hunger game">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p> IMDb:7.2  <br> Rotten Tomatoes 71% </p>
-            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
-        </div>
-    </div>
-
-    <!-- 10th card -->
-    <div class="cards">
-        <div class="image">
-            <img src="/static/Crime/catch-me-if-you-can.jpg"
-                alt="Catch me if you can">
-        </div>
-        <div class="title">
-            <h1></h1>
-        </div>
-        <div class="des">
-            <p> IMDb:8.1 <br> Rotten Tomatoes 89%  </p>
-            <a style="text-decoration: none;" href=" https://bit.ly/3lQTrj8 "><button>watch now</button></a>
-        </div>
-    </div>
-
-</div>
-
-
-
-{% endblock body %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
 {% block imagec1 %} /static/Crime/Goodfellas.webp {% endblock imagec1 %}
 {% block titlec1 %} Good Fellas {% endblock titlec1 %}
 {% block imagec1des %} IMDb:8.7  <br> Rotten tomatoes 97% {% endblock imagec1des %}
@@ -223,4 +48,176 @@
 {% block imagec10 %} /static/Crime/catch-me-if-you-can.jpg  {% endblock imagec10 %}
 {% block titlec10 %} Catch me if you can {% endblock titlec10 %}
 {% block imagec10des %} IMDb:8.1 <br> Rotten Tomatoes 89% {% endblock imagec10des %}
-{% block link10 %} https://bit.ly/3lQTrj8 {% endblock link10 %} -->
+{% block link10 %} https://bit.ly/3lQTrj8 {% endblock link10 %}
+{% block body %} {% endblock body %}
+<!-- <div class="container">
+    
+    <div class="cards">
+        <div class="image">
+            <img src='/static/Crime/Goodfellas.webp'
+                alt="Goodfellas">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p>IMDb:8.7  <br> Rotten tomatoes 97% </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/Mystic River.jpg"
+                alt="Mystic river">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p> IMDb:7.9  <br> Rotten Tomatoes 89%  </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+     
+    
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/Zodiac.jpg"
+                alt="Zodiac">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p> IMDb:7.7 <br> Rotten Tomatoes 77% </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/Talvar.jpg"
+                alt=" Talvar ">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p>IMDb:8.2  <br> Rotten Tomatoes 90% </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+      
+
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/Thadam.jpg"
+                alt="Thadam">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p>IMDb:8.2  <br> Rotten Tomatoes- </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/Nocountryforold.jpg"
+                alt="No country for Old">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p>IMDb:8.1  <br> Rotten Tomatoes 86%  </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/John Wick.jpg"
+                alt="John  Wick">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p> IMDb:7.4  <br> Rotten Tomatoes 81% </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+    
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/Kill Billl.jpg"
+                alt="Kill Bill">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p> IMDb:8.1 <br> Rotten Tomatoes 81%  </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/Hunger Game.jpg"
+                alt="Hunger game">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p> IMDb:7.2  <br> Rotten Tomatoes 71% </p>
+            <button><a style="text-decoration: none;" href="https://www.netflix.com/in/">watch now</a></button>
+        </div>
+    </div>
+
+    
+    <div class="cards">
+        <div class="image">
+            <img src="/static/Crime/catch-me-if-you-can.jpg"
+                alt="Catch me if you can">
+        </div>
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="des">
+            <p> IMDb:8.1 <br> Rotten Tomatoes 89%  </p>
+            <a style="text-decoration: none;" href=" https://bit.ly/3lQTrj8 "><button>watch now</button></a>
+        </div>
+    </div>
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
