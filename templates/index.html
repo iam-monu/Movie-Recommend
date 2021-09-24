@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{%block title %}Home{% endblock title %}
+
+{% block body %}
+<style>
+    .images-row1 {
+        display: inline-block;
+        padding: 12px 48px 22px 248px;
+    }
+
+    .images-row2 {
+        display: inline-block;
+        padding: 12px 48px 70px 248px;
+    }
+
+    .img-resize {
+        height: 250px;
+        width: 300px;
+        border-radius: 15px;
+        object-fit: cover;
+
+    }
+
+    .text-box {
+        width: 60px;
+        position: relative;
+        top: -50px;
+        left: 80px;
+
+    }
+
+    .img-resize:hover {
+        box-shadow: 5px 5px 10px rgb(201, 70, 70);
+        transition: 0.5s;
+        ;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+
+        <div class="images-row1">
+
+            <a style="text-decoration: none" href="/thriller">
+                <img class="img-resize " src="/static/Homepage/memento.jpg " alt="-">
+                <div class="text-box">
+                    <h1 color="white">Thriller</h1>
+            </a>
+        </div>
+    </div>
+    <div class="images-row1">
+        <a style="text-decoration: none" href="/comedy">
+            <img class="img-resize " src="/static/Homepage/Ted.jpg " alt="-">
+            <div class="text-box">
+                <h1 color="white">Comedy</h1>
+            </div>
+        </a>
+    </div>
+    <div class="images-row2">
+        <a style="text-decoration: none" href="/crime">
+            <img class="img-resize " src="/static/Homepage/John Wick.jpg " alt="-">
+            <div class="text-box">
+                <h1 color="white">Crime</h1>
+            </div>
+        </a>
+    </div>
+    <div class="images-row2">
+        <a style="text-decoration: none" href="/sc-fi">
+            <img class="img-resize " src="/static/Homepage/Interstellar.jpg" alt="-">
+            <div class="text-box">
+                <h2 color="white">Science <br> Fiction</h2>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+
+{% endblock body %}

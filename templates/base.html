@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} {% endblock title %} | Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            /* font-family: 'Baloo Bhai 2', cursive; */
+            color: rgb(201, 27, 27);
+            margin: 0px;
+            padding: 0px;
+            /* background: url("webbg.jpg"); */
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 50%;
+            width: 100%;
+
+        }
+
+        header {
+            background-image: url("/static/navbgg.jpg");
+            margin: -20px 0px;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 54px;
+            top: 20px;
+
+        }
+
+        .left img {
+            width: 100px;
+            border-radius: 50px;
+
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 16px;
+            font-size: 23px;
+            margin: -19px 0px;
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(65, 216, 35); */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            /* border: 2px solid rgb(23, 129, 190); */
+            display: inline-block;
+
+        }
+
+        .navbar {
+            display: inline-block;
+            margin: 14px 6px 15px 0px;
+            /* padding: 6px 0px -2px 0px; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: rgb(207, 38, 38);
+            text-decoration: none;
+            padding: 7px 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: rgb(218, 146, 13);
+            text-decoration: underline;
+
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 10px;
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: red;
+        }
+
+
+
+        /* added now! */
+
+
+        body {
+            font-family: Arial;
+            background-color: black;
+        }
+
+        .cards {
+            width: 13%;
+            height: 13%;
+            /* background-color: grey; */
+            border-radius: 5px;
+            margin: 40px;
+            display: inline-block;
+            box-shadow: 2px 2px 10px rgba(170, 11, 11, 0.753);
+
+        }
+
+        .cards:hover {
+            box-shadow: 2px 2px 10px black;
+            ;
+        }
+
+        .image img {
+            width: 100%;
+
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .title {
+            text-align: center;
+            padding: 5px;
+        }
+
+        .des {
+            text-align: center;
+            padding: 4px;
+        }
+
+        button {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: rgb(230, 238, 233);
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(206, 241, 9);
+            color: white;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Recommendations!</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/thriller">Thriller</a></li>
+                <li><a href="/comedy">Comedy</a></li>
+                <li><a href="/crime">Crime</a></li>
+                <li><a href="/sc-fi">Sc-Fi</a></li>
+            </ul>
+
+
+            <!-- right box for contact -->
+        </div>
+
+        <div class="right">
+            <a href="https://www.linkedin.com/in/monu-yadav-63242418b/"><button class="btn">Contact me!</button> </a>
+            <!-- <button class="btn">Email me</button> -->
+        </div>
+
+    </header>
+    
+    
+    {% block body %} {% endblock body %}
+
+</body>
+
+</html>
