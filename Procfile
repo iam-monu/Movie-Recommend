@@ -1,1 +1,1 @@
-web: gunicorn recommend.wsgi
+web: gunicorn MRecommendations.wsgi
